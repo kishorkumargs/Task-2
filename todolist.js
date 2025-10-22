@@ -70,8 +70,11 @@ function toggleTaskCompletion(span) {
 }
 
 // Event listener for the Add Task button
-document.body.addEventListener("keydown", (event) => {
+document.getElementById("task-input").addEventListener("keydown", (event) => {
     if (event.key === "Enter") {
         addTask();
     }
+});
+document.getElementById("add-btn").addEventListener("click", (event) => {
+    addTask();
 });
